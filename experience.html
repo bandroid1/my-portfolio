@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bala Mugunthan Ramesh - Work Experience</title>
+    
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white font-sans" style="font-family: 'Fira Code', monospace;">
+
+    <!-- Navigation Bar -->
+    <header class="p-5 flex justify-between items-center">
+        <div class="text-2xl font-bold">Bala Mugunthan Ramesh</div>
+        <nav>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:text-green-500 hover:font-bold">Home</a></li>
+                <li><a href="personal.html" class="hover:text-green-500 hover:font-bold">Personal Experience</a></li>
+                <li><button onclick="openModal('contactModal')" class="hover:text-green-500 hover:font-bold">Contact</button></li>
+                <li><a href="./Bala Ramesh.pdf" class="border-2 border-teal-400 px-4 py-2 rounded hover:bg-green-500 hover:text-gray-900 hover:font-bold">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Work Experience Section -->
+    <main class="container mx-auto px-6 py-20">
+        <h2 class="text-4xl font-bold mb-6">Work Experience</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Experience Card 1 -->
+            <div class="bg-gray-800 p-6 rounded-lg cursor-pointer" onclick="openModal('experience1')">
+                <h3 class="text-2xl font-semibold mb-2">Accessibility Auditor</h3>
+                <p class="text-teal-400 mb-4">Applause Limited, Hyderabad, India | Oct 2022 - Sep 2023</p>
+            </div>
+            
+            <!-- Experience Card 2 -->
+            <div class="bg-gray-800 p-6 rounded-lg cursor-pointer" onclick="openModal('experience2')">
+                <h3 class="text-2xl font-semibold mb-2">Senior Test Engineer</h3>
+                <p class="text-teal-400 mb-4">Happiest Minds, Bangalore, India | Mar 2021 - Sep 2022</p>
+            </div>
+
+            <!-- Experience Card 3 -->
+            <div class="bg-gray-800 p-6 rounded-lg cursor-pointer" onclick="openModal('experience3')">
+                <h3 class="text-2xl font-semibold mb-2">Software Engineer</h3>
+                <p class="text-teal-400 mb-4">Tech Mahindra, Bangalore, India | Aug 2016 - Sep 2020</p>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <section id="projects" class="mt-20">
+            <h2 class="text-4xl font-bold mb-6">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-gray-800 p-6 rounded-lg cursor-pointer">
+                    <h3 class="text-2xl font-semibold mb-2">Image to Tactile Graphics</h3>
+                    <p class="text-teal-400 mb-4">A project using Python and advanced CNN networks to convert images into tactile graphics for the visually impaired.</p>
+                    <a href="#" class="text-green-500 hover:underline">View Project</a>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="bg-gray-800 p-6 rounded-lg cursor-pointer">
+                    <h3 class="text-2xl font-semibold mb-2">Responsive Portfolio Website</h3>
+                    <p class="text-teal-400 mb-4">A fully responsive personal portfolio website built using HTML, CSS, and JavaScript to showcase my projects and skills.</p>
+                    <a href="#" class="text-green-500 hover:underline">View Project</a>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Modal Overlay -->
+    <div id="modal-overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
+
+    <!-- Modal 1 (Accessibility Auditor) -->
+    <div id="experience1" class="modal hidden fixed inset-0 flex items-center justify-center z-50">
+        <div class="modal-content bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
+            <h3 class="text-2xl font-semibold text-gray-900 mb-4">Accessibility Auditor</h3>
+            <p class="text-gray-600 mb-4">Applause Limited, Hyderabad, India | Oct 2022 - Sep 2023</p>
+            <ul class="text-gray-700 list-disc list-inside mb-4">
+                <li>Utilized JavaScript, React.js, and Angular to develop accessible components.</li>
+                <li>Performed code and application audits based on WCAG standards.</li>
+                <li>Mentored junior accessibility engineers on auditing standards and development guidelines.</li>
+            </ul>
+            <div class="flex justify-end space-x-4">
+                <button onclick="closeModal('experience1')" class="btn-outline px-4 py-2 border-2 border-gray-500 text-gray-500 rounded hover:bg-gray-500 hover:text-white">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 (Senior Test Engineer) -->
+    <div id="experience2" class="modal hidden fixed inset-0 flex items-center justify-center z-50">
+        <div class="modal-content bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
+            <h3 class="text-2xl font-semibold text-gray-900 mb-4">Senior Test Engineer</h3>
+            <p class="text-gray-600 mb-4">Happiest Minds, Bangalore, India | Mar 2021 - Sep 2022</p>
+            <ul class="text-gray-700 list-disc list-inside mb-4">
+                <li>Led front-end development of accessible web applications using React JS and Material UI.</li>
+                <li>Developed and executed comprehensive test suites with NVDA, JAWS, AXE, and other tools.</li>
+                <li>Introduced unit-level accessibility audits, improving efficiency across the team.</li>
+            </ul>
+            <div class="flex justify-end space-x-4">
+                <button onclick="closeModal('experience2')" class="btn-outline px-4 py-2 border-2 border-gray-500 text-gray-500 rounded hover:bg-gray-500 hover:text-white">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 (Software Engineer) -->
+    <div id="experience3" class="modal hidden fixed inset-0 flex items-center justify-center z-50">
+        <div class="modal-content bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
+            <h3 class="text-2xl font-semibold text-gray-900 mb-4">Software Engineer</h3>
+            <p class="text-gray-600 mb-4">Tech Mahindra, Bangalore, India | Aug 2016 - Sep 2020</p>
+            <ul class="text-gray-700 list-disc list-inside mb-4">
+                <li>Reported and analyzed over 4,000 accessibility issues across AT&T's digital products.</li>
+                <li>Collaborated on the migration to responsive web design, ensuring accessibility compliance.</li>
+                <li>Led the accessibility initiative for the chat feature across AT&T's digital products.</li>
+            </ul>
+            <div class="flex justify-end space-x-4">
+                <button onclick="closeModal('experience3')" class="btn-outline px-4 py-2 border-2 border-gray-500 text-gray-500 rounded hover:bg-gray-500 hover:text-white">Cancel</button>
+            </div>
+        </div>
+    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal and Overlay -->
+    <div id="modal-overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden"></div>
+    <div id="contactModal" class="modal hidden fixed inset-0 flex items-center justify-center z-50">
+        <div class="modal-content bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
+            <h2 class="text-4xl font-bold mb-6 text-gray-900">Contact</h2>
+            <p class="text-gray-600 mb-8">Have a question or want to work together? Feel free to reach out!</p>
+            <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="max-w-md mx-auto" onsubmit="return validateForm()">
+                <div class="mb-4">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required class="w-full p-3 bg-gray-200 text-gray-900 rounded">
+                    <p id="nameError" class="text-red-500 text-sm mt-1 hidden">Name is required.</p>
+                </div>
+                <div class="mb-4">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required class="w-full p-3 bg-gray-200 text-gray-900 rounded">
+                    <p id="emailError" class="text-red-500 text-sm mt-1 hidden">Valid email is required.</p>
+                </div>
+                <div class="mb-4">
+                    <textarea id="message" name="message" rows="4" placeholder="Your Message" required class="w-full p-3 bg-gray-200 text-gray-900 rounded"></textarea>
+                    <p id="messageError" class="text-red-500 text-sm mt-1 hidden">Message is required.</p>
+                </div>
+                <div class="flex justify-end space-x-4">
+                    <button type="button" onclick="closeModal('contactModal')" class="btn-outline px-4 py-2 border-2 border-gray-500 text-gray-500 rounded hover:bg-gray-500 hover:text-white">Cancel</button>
+                    <button type="submit" class="btn-outline px-4 py-2 border-2 border-gray-500 text-gray-500 rounded hover:bg-gray-500 hover:text-white">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+        
+
+    <script src="scripts.js"></script>
+</body>
+</html>

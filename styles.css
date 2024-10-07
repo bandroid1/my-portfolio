@@ -1,0 +1,47 @@
+/* Modal container */
+.modal {
+    @apply fixed inset-0 flex items-center justify-center hidden;
+    z-index: 50; /* Ensure it's above the overlay */
+}
+
+/* Modal content centered with a white background */
+.modal-content {
+    @apply bg-white p-6 rounded-lg max-w-md shadow-lg relative mx-auto w-full;
+    font-family: 'Fira Code', monospace;
+    z-index: 60; /* Ensure it's above the overlay */
+}
+
+/* Header inside modal */
+.modal-content h3 {
+    @apply text-2xl font-semibold text-gray-900 mb-4;
+}
+
+/* Text inside modal */
+.modal-content p {
+    @apply text-gray-600 mb-4;
+}
+
+/* List inside modal */
+.modal-content ul {
+    @apply text-gray-700 list-disc list-inside mb-4;
+}
+
+/* Close (Cancel) button */
+.btn-outline {
+    @apply inline-block px-4 py-2 border-2 border-gray-500 text-gray-500 rounded hover:bg-gray-500 hover:text-white;
+}
+
+/* Overlay to cover the entire screen and disable page interactions */
+#modal-overlay {
+    @apply fixed inset-0 bg-black bg-opacity-50 hidden;
+    z-index: 40; /* Below modal content but above the main content */
+}
+
+/* Utility class for hidden */
+.hidden {
+    display: none;
+}
+
+.btn-submit {
+    @apply inline-block px-8 py-3 border-2 border-teal-400 text-teal-400 rounded hover:bg-teal-400 hover:text-gray-900;
+}
